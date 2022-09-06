@@ -7,11 +7,12 @@
 	xsi:schemaLocation="
 http://www.mulesoft.org/schema/mule/mule-apikit http://www.mulesoft.org/schema/mule/mule-apikit/current/mule-apikit.xsd 
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
-	
 	<http:listener-config name="RetrieveConsolidatedRoutesAndSchedule-TravelOnTip-SAPI-httpListenerConfig">
         <http:listener-connection host="${http.listener.host}" port="${http.listener.port}" />
     </http:listener-config>
-	<configuration-properties doc:name="Configuration properties" doc:id="2dac2192-1fcb-4a90-80ce-580cb33e64b0" file="config\local.yaml" />
+    <apikit:config name="RetrieveConsolidatedRoutesAndSchedule-TravelOnTip-SAPI-config" api="RetrieveConsolidatedRoutesAndSchedule-TravelOnTip-SAPI.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
+	<configuration-properties doc:name="Configuration properties" doc:id="6565cac0-439b-454e-97e1-c3a9a9f7db66" file="config\local.yaml" />
+	<configuration doc:name="Configuration" doc:id="cb21046a-6a7c-49d8-83af-304703f289f0" defaultErrorHandler-ref="globalErrorHandlerError_Handler" />
 	
 	
 </mule>

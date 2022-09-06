@@ -1,0 +1,4 @@
+%dw 2.0
+
+type auto_29c4e3da_82a5_4ff6_8c30_44df2335ca9d_Output_Variables_transactionId = Any
+
