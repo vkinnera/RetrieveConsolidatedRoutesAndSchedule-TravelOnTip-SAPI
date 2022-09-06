@@ -12,6 +12,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     </http:listener-config>
     <apikit:config name="RetrieveConsolidatedRoutesAndSchedule-TravelOnTip-SAPI-config" api="RetrieveConsolidatedRoutesAndSchedule-TravelOnTip-SAPI.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
 	<configuration-properties doc:name="Configuration properties" doc:id="6565cac0-439b-454e-97e1-c3a9a9f7db66" file="config\local.yaml" />
+	<configuration doc:name="Configuration" doc:id="cb21046a-6a7c-49d8-83af-304703f289f0" defaultErrorHandler-ref="globalErrorHandlerError_Handler" />
 	
 	
 </mule>
